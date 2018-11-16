@@ -44,7 +44,7 @@ export default [
     },
     external: [...Object.keys(pkg.dependencies)],
     plugins: [
-      ts({ typescript }),
+      ts({ typescript, useTsconfigDeclarationDir: true }), // so TS will generate declaration files
       terser(),
       analyze()
     ],
