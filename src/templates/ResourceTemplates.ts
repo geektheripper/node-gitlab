@@ -5,7 +5,7 @@ import {
   Sudo,
   ResourceId,
   ResourceType,
-} from '@typings';
+} from '../types';
 
 class ResourceTemplates extends BaseService {
   constructor(resourceType: ResourceType, options: BaseServiceOptions) {

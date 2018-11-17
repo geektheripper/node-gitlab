@@ -6,7 +6,7 @@ import {
   ResourceId,
   ResourceType,
   KeyId,
-} from '@typings';
+} from '../types';
 
 const url = (resourceId, resource2Type, resource2Id) => {
   const [rId, r2Id] = [resourceId, resource2Id].map(encodeURIComponent);

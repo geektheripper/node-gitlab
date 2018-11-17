@@ -5,7 +5,7 @@ import {
   Sudo,
   SnippetId,
   SnippetVisibility,
-} from '@typings';
+} from '../types';
 
 class Snippets extends BaseService {
   all({ public: p, ...options }: { public: boolean } & PaginatedRequestOptions) {

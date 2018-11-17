@@ -5,7 +5,7 @@ import {
   NotificationSettingLevel,
   ProjectId,
   GroupId
-} from '@typings';
+} from '../types';
 
 class NotificationSettings extends BaseService {
   all({

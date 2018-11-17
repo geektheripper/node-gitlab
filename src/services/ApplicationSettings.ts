@@ -1,5 +1,5 @@
 import { BaseService, RequestHelper } from '../infrastructure';
-import { BaseRequestOptions, Sudo } from '@typings';
+import { BaseRequestOptions, Sudo } from '../types';
 
 class ApplicationSettings extends BaseService {
   all(options?: Sudo) {
