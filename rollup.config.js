@@ -35,21 +35,6 @@ export default [
     ],
   },
 
-  // CommonJS (for Node) (for bundlers) build.
-  {
-    input: 'src/index.ts',
-    output: {
-      file: pkg.main,
-      format: 'cjs',
-    },
-    external: [...Object.keys(pkg.dependencies)],
-    plugins: [
-      ts({ typescript, useTsconfigDeclarationDir: true }), // so TS will generate declaration files
-      terser(),
-      analyze()
-    ],
-  },
-
   // ES module (for bundlers) build.
   {
     input: 'src/index.ts',
